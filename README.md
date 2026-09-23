@@ -7,8 +7,9 @@ This repository contains assignments provided by my college as part of my academ
 
 - HTML & CSS
 - Git & GitHub
--Python
-- More subjects will be added as the coursework progresses.
+- Python
+
+- *More subjects will be added as the coursework progresses.*
 
 ## 🎯 Purpose
 
