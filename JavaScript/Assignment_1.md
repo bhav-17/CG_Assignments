@@ -1,4 +1,4 @@
-# Assignment 1
+# Assignment 1: Introduction to JavaScript
 ## Section A
 
 **Q1.** JavaScript is a high-level programming language used to add interactivity to web pages.
