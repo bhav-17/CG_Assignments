@@ -335,3 +335,259 @@ let student = {
     age: 18
 };
 ```
+
+---
+
+# Updated Questions — Additional Answers
+
+> The answers above are preserved as provided in the original file. The following sections contain answers for the questions added in the updated assignment.
+
+## Part H: Non-Primitive Data Types — Additional Answers
+
+### 1. Create an Object
+
+```javascript
+const student = {
+    name: "Riya",
+    age: 18,
+    isEnrolled: true
+};
+
+console.log(student);
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.isEnrolled);
+```
+
+### 2. Work with Arrays
+
+```javascript
+const scores = [85, 92, 78, 90];
+
+const mixedData = [10, "Hello", true, null];
+
+console.log(scores);
+console.log(mixedData);
+
+console.log(scores[0]);
+console.log(scores[3]);
+```
+
+### 3. Declare and Call a Function
+
+```javascript
+function calculateArea(length, width) {
+    return length * width;
+}
+
+console.log(calculateArea(10, 5));
+console.log(calculateArea(8, 4));
+```
+
+### 4. Check Types with `typeof`
+
+```javascript
+let numberValue = 10;
+let stringValue = "Hello";
+let booleanValue = true;
+let nullValue = null;
+let objectValue = { name: "Riya" };
+let arrayValue = [1, 2, 3];
+
+function myFunction() {
+    return "Hello";
+}
+
+console.log(numberValue, typeof numberValue);
+console.log(stringValue, typeof stringValue);
+console.log(booleanValue, typeof booleanValue);
+console.log(nullValue, typeof nullValue);
+console.log(objectValue, typeof objectValue);
+console.log(arrayValue, typeof arrayValue);
+console.log(myFunction, typeof myFunction);
+```
+
+**Observation:**
+
+- `typeof null` gives `"object"`.
+- `typeof array` gives `"object"`.
+- `typeof function` gives `"function"`.
+
+---
+
+## Part I: Naming Rules & Best Practices — Additional Answers
+
+### 5. Valid vs Invalid Variable Names
+
+```javascript
+let userName;       // Valid
+let 2ndPlace;       // Invalid
+let _privateData;   // Valid
+let $price;         // Valid
+let my-age;         // Invalid
+let function;       // Invalid
+let totalCount;     // Valid
+let const;          // Invalid
+```
+
+**Invalid names:**
+
+- `2ndPlace` → cannot start with a number.
+- `my-age` → hyphen `-` is not allowed in an identifier.
+- `function` → reserved keyword.
+- `const` → reserved keyword.
+
+### 6. Apply Best Practices
+
+```javascript
+const rectangleLength = 10;
+const rectangleWidth = 5;
+const rectangleArea = rectangleLength * rectangleWidth;
+const maximumScore = 100;
+
+console.log(rectangleArea);
+console.log(maximumScore);
+```
+
+### 7. Declaration & Assignment
+
+```javascript
+let age;
+age = 18;
+
+let name = "Bhavya";
+
+const PI = 3.14;
+
+console.log(age);
+console.log(name);
+console.log(PI);
+```
+
+---
+
+## Part J: Prediction & Fixing — Additional Answers
+
+### 8. Predict the Output
+
+```javascript
+let person = { name: "Amit", age: 22 };
+let colors = ["red", "green", "blue"];
+
+function sayHi() {
+    return "Hi!";
+}
+
+let empty = null;
+
+console.log(typeof person);
+console.log(typeof colors);
+console.log(typeof sayHi);
+console.log(typeof empty);
+console.log(person.name);
+console.log(colors[1]);
+console.log(sayHi());
+```
+
+**Output:**
+
+```text
+object
+object
+function
+object
+Amit
+green
+Hi!
+```
+
+### 9. Fix the Program
+
+```javascript
+let student = {
+    name: "Neha",
+    age: 19
+};
+
+let scores = [90, 85, 88];
+
+function greet(name) {
+    return "Hello " + name;
+}
+
+let maxScore = 100;
+maxScore = 95;
+
+console.log(student.name);
+console.log(scores[0]);
+console.log(greet("Neha"));
+```
+
+**Output:**
+
+```text
+Neha
+90
+Hello Neha
+```
+
+### 10. Concept Questions
+
+**a) What is the main difference between an Object and an Array?**
+
+An object stores data using named properties or keys:
+
+```javascript
+const student = {
+    name: "Riya",
+    age: 18
+};
+```
+
+An array stores an ordered collection of values accessed using indexes:
+
+```javascript
+const scores = [85, 90, 95];
+```
+
+**b) Why does `typeof null` return `"object"`? Is `null` really an object?**
+
+```javascript
+console.log(typeof null);
+```
+
+Output:
+
+```text
+object
+```
+
+This is a historical behavior of JavaScript. `null` is actually a primitive value, not an object.
+
+**c) Why is it recommended to keep arrays with a single data type?**
+
+Keeping one data type makes an array easier to understand, process, and work with consistently.
+
+Example:
+
+```javascript
+const scores = [85, 90, 95, 88];
+```
+
+This is clearer when the array represents only scores.
+
+**d) When should you use `const` and when should you use `let`?**
+
+Use `const` when the variable will not be reassigned:
+
+```javascript
+const name = "Bhavya";
+```
+
+Use `let` when the variable needs to be reassigned:
+
+```javascript
+let score = 50;
+score = 80;
+```
