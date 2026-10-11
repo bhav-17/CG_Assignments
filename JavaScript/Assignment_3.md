@@ -616,3 +616,215 @@
        console.log("Input is not the string 0");
    }
    ```
+
+
+### 5. Greater Than `>`
+
+1. ```js
+   78 > 40 // true
+   ```
+   The student scored more than the passing marks.
+
+2. ```js
+   35 > 28 // true
+   ```
+
+3. Output:
+   ```text
+   true
+   false
+   false
+   ```
+
+4. Output:
+   ```text
+   true
+   true
+   false
+   ```
+   `"20" > 15` is true because the string is converted to a number. But `"5" > "10"` compares the strings character by character, so `"5"` is greater than `"1"`. `"abc" > 10` is false because `"abc"` cannot be converted to a number.
+
+5. ```text
+   null > 0       → false
+   undefined > 0  → false
+   ```
+   `null` becomes `0`, and `0 > 0` is false. `undefined` becomes `NaN`, and comparisons with `NaN` return false.
+
+6. ```js
+   let stock = 120;
+   let wanted = 85;
+   console.log(stock > wanted); // true
+   ```
+
+7. Output:
+   ```text
+   true
+   false
+   false
+   ```
+   `true` is treated as `1` and `false` as `0`. `"10" > "2"` is a string comparison, so it is false. A comparison involving `NaN` is also false.
+
+### 6. Less Than `<`
+
+1. ```js
+   42 < 50 // true
+   ```
+   There is still room in the box.
+
+2. ```js
+   16 < 18 // true
+   ```
+
+3. Output:
+   ```text
+   true
+   false
+   false
+   ```
+
+4. Output:
+   ```text
+   true
+   true
+   false
+   ```
+   `"8"` is converted to a number when compared with `10`. `"20" < "3"` compares the strings, and `"2"` comes before `"3"`. `"hello"` cannot be converted to a number, so the result is false.
+
+5. ```text
+   null < 0       → false
+   undefined < 0  → false
+   ```
+   `null` becomes `0`, so it is not less than `0`. `undefined` becomes `NaN`, which makes the comparison false.
+
+6. ```js
+   let water = 375;
+   let capacity = 500;
+   console.log(water < capacity); // true
+   ```
+
+7. Output:
+   ```text
+   true
+   false
+   false
+   ```
+   `false` is `0` and `true` is `1`. `"5" < "15"` is false because it compares the first characters (`"5"` and `"1"`). `NaN < 10` is false.
+
+### 7. Greater Than or Equal To `>=`
+
+1. ```js
+   75 >= 75 // true
+   ```
+
+2. ```js
+   300 >= 300 // true
+   ```
+   The person has exactly enough money.
+
+3. Output:
+   ```text
+   true
+   true
+   false
+   ```
+
+4. Output:
+   ```text
+   true
+   false
+   true
+   ```
+   `"25"` is converted to the number `25`. `"10" >= "2"` is false because strings are compared character by character. `null` becomes `0`, so `null >= 0` is true.
+
+5. ```text
+   undefined >= 0 → false
+   ```
+   `undefined` becomes `NaN`, and comparisons with `NaN` return false.
+
+6. ```js
+   let people = 8;
+   let limit = 8;
+   console.log(people >= limit); // true
+   ```
+
+7. Output:
+   ```text
+   true
+   true
+   false
+   ```
+   `true` becomes `1`, and an empty string becomes `0`. `NaN >= NaN` is false.
+
+### 8. Less Than or Equal To `<=`
+
+1. ```js
+   60 <= 60 // true
+   ```
+
+2. ```js
+   39 <= 40 // true
+   ```
+   The student has fewer than the 40 marks needed to pass, so they have failed.
+
+3. Output:
+   ```text
+   true
+   false
+   true
+   ```
+
+4. Output:
+   ```text
+   true
+   true
+   true
+   ```
+   `"15"` is converted to `15` for the comparison with a number. `"30" <= "5"` is true because the strings are compared character by character. `null` becomes `0`, so `null <= 0` is true.
+
+5. ```text
+   undefined <= 0 → false
+   ```
+   The comparison involves `NaN`, so the result is false.
+
+6. ```js
+   let books = 10;
+   let maxBooks = 10;
+   console.log(books < maxBooks); // false
+   ```
+   The bag is already at its limit, so no more books can be added. `books <= maxBooks` would only check whether it is at or under the limit.
+
+7. Output:
+   ```text
+   true
+   true
+   false
+   ```
+   `false` becomes `0`, and an empty string also becomes `0`. Any comparison with `NaN` returns false.
+
+### Mixed Practice (>, <, >=, <=)
+
+1. ```js
+   18 >= 18 // true
+   32 < 35  // true
+   90 > 85  // true
+   ```
+
+2. Output:
+   ```text
+   true
+   true
+   false
+   false
+   ```
+   `null <= undefined` is false because `undefined` becomes `NaN`. `"5" < "10"` is false because the strings are compared character by character, and `"5"` is greater than `"1"`.
+
+3. ```js
+   let money = 500;
+   let price = 499;
+
+   console.log(money >= price); // true, the customer can buy it
+   console.log(price < money);  // true, some change will be left
+   console.log(money - price);  // 1
+   ```
+
+4. When both values are strings, JavaScript compares them character by character. So `"10" > "2"` is false because the first character `"1"` comes before `"2"`. With numbers, it compares their numeric values, so `10 > 2` is true.
