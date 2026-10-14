@@ -1,6 +1,6 @@
 # College Assignments
 
-This repository contains HTML and CSS assignments.
+This repository contains HTML assignments.
 
 
 ## 📁 Repository Structure
