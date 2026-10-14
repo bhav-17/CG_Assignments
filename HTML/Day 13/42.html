@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/default-action.php" method="post" target="_self">
+  <div>
+    <label for="field1">Required Field 1:</label>
+    <input type="text" id="field1" name="field1" required>
+  </div>
+  <div>
+    <label for="field2">Required Field 2:</label>
+    <input type="text" id="field2" name="field2" required>
+  </div>
+
+  <button type="submit" formaction="/override-action.php">Override Action</button>
+  <button type="submit" formmethod="get">Override Method</button>
+  <button type="submit" formnovalidate>Override Novalidate</button>
+  <button type="submit" formtarget="_blank">Override Target</button>
+</form>
+</body>
+</html>

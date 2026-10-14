@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/apply.php" method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Personal Details</legend>
+    <label for="app-name">Name:</label>
+    <input type="text" id="app-name" name="fullname" required>
+
+    <label for="app-email">Email:</label>
+    <input type="email" id="app-email" name="email" required>
+
+    <label for="app-phone">Phone:</label>
+    <input type="tel" id="app-phone" name="phone" required>
+  </fieldset>
+
+  <fieldset>
+    <legend>Experience</legend>
+    <label for="app-exp">Work Experience:</label>
+    <textarea id="app-exp" name="experience" rows="4" cols="50"></textarea>
+  </fieldset>
+
+  <div>
+    <label for="app-resume">Upload Resume (PDF):</label>
+    <input type="file" id="app-resume" name="resume" accept=".pdf" required>
+  </div>
+
+  <div>
+    <p>Employment Type:</p>
+    <input type="radio" id="fulltime" name="emptype" value="fulltime">
+    <label for="fulltime">Full-time</label>
+    <input type="radio" id="parttime" name="emptype" value="parttime">
+    <label for="parttime">Part-time</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+    <label for="terms">I agree to terms and conditions</label>
+  </div>
+
+  <button type="submit">Submit Application</button>
+  <button type="submit" formnovalidate>Save Draft</button>
+</form>
+</body>
+</html>

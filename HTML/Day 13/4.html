@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--application/x-www-form-urlencoded is the default because it converts characters to ASCII format before sending, suitable for standard textual form data without binary files.-->
+<form action="/submit.php" method="post" enctype="application/x-www-form-urlencoded">
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 30 - Best Practice Iframe Usage</title>
+  <style>
+    iframe {
+      border: none;
+      margin-bottom: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Best-Practice Iframes Showcase</h1>
+
+  <!-- Standard webpage embed: No hardware or special browser capabilities required -->
+  <iframe src="https://www.example.com" width="100%" height="300" title="Standard Website Information Frame"></iframe>
+
+  <!-- Video/VR embed: Requires fullscreen display for video presentation and gyroscope for orientation tracking -->
+  <iframe src="https://example.com/vr-video" width="800" height="450" allow="fullscreen; gyroscope" allowfullscreen title="3D VR Media Player"></iframe>
+
+  <!-- Hardware interface embed: Requires WebUSB permissions to interact with connected USB devices -->
+  <iframe src="https://device.example.com" width="600" height="400" allow="usb" title="Hardware USB Control Console"></iframe>
+</body>
+</html>
