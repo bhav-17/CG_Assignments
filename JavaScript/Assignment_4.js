@@ -706,8 +706,8 @@ switch (value) {
 }
 
 // 8. Calculator
-let a = 10;
-let b = 3;
+let a_2 = 10;
+let b_2 = 3;
 let operator = "**";
 switch (operator) {
     case "+":
