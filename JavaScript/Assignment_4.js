@@ -1,70 +1,90 @@
 // A] if Statement
 
 // 1. Check if a number is divisible by 5
-function checkDivisibleBy5(num) {
+{
+    let num = 25;
+    
     if (num % 5 === 0) {
         console.log("Divisible by 5");
     }
 }
 
-// 2. Check if a person’s age is >= 60
-function checkSeniorCitizen(age) {
+// 2. Check if a person’s age is greater than or equal to 60
+{
+    let age = 65;
+    
     if (age >= 60) {
         console.log("Senior Citizen");
     }
 }
 
-// 3. Check if a given number is > 100
-function checkBigNumber(num) {
+// 3. Check if a given number is greater than 100
+{
+    let num = 150;
+    
     if (num > 100) {
         console.log("Big Number");
     }
 }
 
-// 4. Check if temperature is < 10
-function checkTemperature(temp) {
+// 4. Check if the temperature is less than 10
+{
+    let temp = 5;
+    
     if (temp < 10) {
         console.log("Very Cold");
     }
 }
 
-// 5. Check if student scored full marks
-function checkPerfectScore(marks) {
+// 5. Check if a student scored full marks (100)
+{
+    let marks = 100;
+    
     if (marks === 100) {
         console.log("Perfect Score");
     }
 }
 
 // 6. Check if a number is negative
-function checkNegative(num) {
+{
+    let num = -5;
+    
     if (num < 0) {
         console.log("Negative Number");
     }
 }
 
-// 7. Check if user entered an empty string
-function checkEmptyString(str) {
+// 7. Check if a user has entered an empty string
+{
+    let str = "";
+    
     if (str === "") {
         console.log("No input provided");
     }
 }
 
-// 8. Check if year is divisible by 100
-function checkCenturyYear(year) {
+// 8. Check if a given year is divisible by 100
+{
+    let year = 2000;
+    
     if (year % 100 === 0) {
         console.log("Century Year");
     }
 }
 
-// 9. Check if number is positive and even using single if
-function checkPositiveEven(num) {
+// 9. Check if a number is both positive and even
+{
+    let num = 14;
+    
     if (num > 0 && num % 2 === 0) {
         console.log("Positive Even Number");
     }
 }
 
-// 10. Check if marks are >= 35 and <= 100
-function checkValidMarks(marks) {
+// 10. Check if marks is >= 35 and <= 100
+{
+    let marks = 85;
+    
     if (marks >= 35 && marks <= 100) {
         console.log("Valid Marks");
     }
@@ -74,181 +94,262 @@ function checkValidMarks(marks) {
 // B] if...else Statement
 
 // 1. Check whether a number is even or odd
-function checkEvenOdd(num) {
+{
+    let num = 7;
+    let result = "";
+    
     if (num % 2 === 0) {
-        console.log("Even");
+        result = "Even";
     } else {
-        console.log("Odd");
+        result = "Odd";
     }
+    
+    console.log(result);
 }
 
-// 2. Check if eligible to vote (age ≥ 18)
-function checkVotingEligibility(age) {
+// 2. Check if eligible to vote
+{
+    let age = 20;
+    let status = "";
+    
     if (age >= 18) {
-        console.log("Eligible");
+        status = "Eligible";
     } else {
-        console.log("Not Eligible");
+        status = "Not Eligible";
     }
+    
+    console.log(status);
 }
 
 // 3. Check whether a number is positive or negative
-function checkPositiveOrNegative(num) {
+{
+    let num = -10;
+    let type = "";
+    
     if (num >= 0) {
-        console.log("Positive");
+        type = "Positive";
     } else {
-        console.log("Negative");
+        type = "Negative";
     }
+    
+    console.log(type);
 }
 
-// 4. Check if student has passed or failed
-function checkPassFail(marks) {
+// 4. Check if passed or failed
+{
+    let marks = 30;
+    let result = "";
+    
     if (marks >= 35) {
-        console.log("Passed");
+        result = "Pass";
     } else {
-        console.log("Failed");
+        result = "Fail";
     }
+    
+    console.log(result);
 }
 
-// 5. Check whether a given character is uppercase
-function checkUppercase(char) {
-    if (char >= 'A' && char <= 'Z') {
-        console.log("Uppercase Letter");
+// 5. Check whether a character is uppercase
+{
+    let char = "A";
+    let isUpper = "";
+    
+    if (char >= "A" && char <= "Z") {
+        isUpper = "Uppercase Letter";
     } else {
-        console.log("Not an Uppercase Letter");
+        isUpper = "Not an Uppercase Letter";
     }
+    
+    console.log(isUpper);
 }
 
 // 6. Check if a number is divisible by 3 or not
-function checkDivisibleBy3(num) {
+{
+    let num = 9;
+    let result = "";
+    
     if (num % 3 === 0) {
-        console.log("Divisible by 3");
+        result = "Divisible by 3";
     } else {
-        console.log("Not divisible by 3");
+        result = "Not divisible by 3";
     }
+    
+    console.log(result);
 }
 
-// 7. Check password authentication
-function checkPassword(password) {
+// 7. Password check
+{
+    let password = "admin";
+    let message = "";
+    
     if (password === "admin123") {
-        console.log("Login Successful");
+        message = "Login Successful";
     } else {
-        console.log("Incorrect Password");
+        message = "Incorrect Password";
     }
+    
+    console.log(message);
 }
 
-// 8. Check leap year using basic rule
-function checkBasicLeapYear(year) {
+// 8. Leap year basic rule (divisible by 4)
+{
+    let year = 2024;
+    let result = "";
+    
     if (year % 4 === 0) {
-        console.log("Leap Year");
+        result = "Leap Year";
     } else {
-        console.log("Not a Leap Year");
+        result = "Not a Leap Year";
     }
+    
+    console.log(result);
 }
 
-// 9. Find greater of two numbers
-function findGreater(a, b) {
+// 9. Greater of two numbers
+{
+    let a = 15;
+    let b = 20;
+    let greaterNum = 0;
+    
     if (a > b) {
-        console.log(a + " is greater");
+        greaterNum = a;
     } else {
-        console.log(b + " is greater");
+        greaterNum = b;
     }
+    
+    console.log(greaterNum + " is greater");
 }
 
-// 10. Check positive, negative, or zero using only if...else
-function checkPosNegZero(num) {
+// 10. Positive, negative, or zero using only if...else
+{
+    let num = 0;
+    let result = "";
+    
     if (num > 0) {
-        console.log("Positive");
+        result = "Positive";
     } else {
         if (num < 0) {
-            console.log("Negative");
+            result = "Negative";
         } else {
-            console.log("Zero");
+            result = "Zero";
         }
     }
+    
+    console.log(result);
 }
 
 
 // C] if...else if...else Statement
 
 // 1. Month to Season
-function getSeason(month) {
+{
+    let month = 4;
+    let season = "";
+    
     if (month === 12 || month === 1 || month === 2) {
-        console.log("Winter");
+        season = "Winter";
     } else if (month >= 3 && month <= 5) {
-        console.log("Summer");
+        season = "Summer";
     } else if (month >= 6 && month <= 8) {
-        console.log("Monsoon");
+        season = "Monsoon";
     } else if (month >= 9 && month <= 11) {
-        console.log("Autumn");
+        season = "Autumn";
     } else {
-        console.log("Invalid month");
+        season = "Invalid Month";
     }
+    
+    console.log(season);
 }
 
-// 2. Simple tax calculator
-function calculateTax(income) {
+// 2. Tax calculator
+{
+    let income = 600000;
     let tax = 0;
+    
     if (income < 300000) {
         tax = 0;
     } else if (income >= 300000 && income <= 700000) {
         tax = income * 0.05;
     } else if (income > 700000 && income <= 1000000) {
         tax = income * 0.10;
-    } else if (income > 1000000) {
+    } else {
         tax = income * 0.15;
     }
-    console.log("Tax Amount: ₹" + tax);
+    
+    console.log("Tax Amount: " + tax);
 }
 
-// 3. Student score grading
-function gradeStudent(score) {
+// 3. Student's score check
+{
+    let score = 85;
+    let grade = "";
+    
     if (score >= 90) {
-        console.log("Outstanding");
+        grade = "Outstanding";
     } else if (score >= 70) {
-        console.log("Good");
+        grade = "Good";
     } else if (score >= 40) {
-        console.log("Average");
+        grade = "Average";
     } else {
-        console.log("Needs Improvement");
+        grade = "Needs Improvement";
     }
+    
+    console.log(grade);
 }
 
 // 4. Vehicle speed
-function checkSpeed(speed) {
+{
+    let speed = 60;
+    let status = "";
+    
     if (speed < 40) {
-        console.log("Slow");
-    } else if (speed >= 40 && speed <= 80) {
-        console.log("Normal");
+        status = "Slow";
+    } else if (speed <= 80) {
+        status = "Normal";
     } else {
-        console.log("Fast");
+        status = "Fast";
     }
+    
+    console.log(status);
 }
 
-// 5. Check person's height
-function checkHeight(heightCm) {
-    if (heightCm < 150) {
-        console.log("Short");
-    } else if (heightCm >= 150 && heightCm <= 170) {
-        console.log("Average");
+// 5. Person's height
+{
+    let height = 165;
+    let category = "";
+    
+    if (height < 150) {
+        category = "Short";
+    } else if (height <= 170) {
+        category = "Average";
     } else {
-        console.log("Tall");
+        category = "Tall";
     }
+    
+    console.log(category);
 }
 
-// 6. Check Weekday or Weekend
-function checkDay(dayNumber) {
-    if (dayNumber >= 1 && dayNumber <= 5) {
-        console.log("Weekday");
-    } else if (dayNumber === 6 || dayNumber === 7) {
-        console.log("Weekend");
+// 6. Day number Weekday/Weekend
+{
+    let day = 6;
+    let dayType = "";
+    
+    if (day >= 1 && day <= 5) {
+        dayType = "Weekday";
+    } else if (day === 6 || day === 7) {
+        dayType = "Weekend";
     } else {
-        console.log("Invalid day");
+        dayType = "Invalid day";
     }
+    
+    console.log(dayType);
 }
 
-// 7. Calculate electricity bill (tiered calculation)
-function calculateElectricityBill(units) {
+// 7. Electricity bill
+{
+    let units = 100;
     let bill = 0;
+    
     if (units <= 50) {
         bill = units * 2;
     } else if (units <= 150) {
@@ -256,53 +357,73 @@ function calculateElectricityBill(units) {
     } else {
         bill = (50 * 2) + (100 * 4) + ((units - 150) * 6);
     }
-    console.log("Total Bill: ₹" + bill);
+    
+    console.log("Total Bill: " + bill);
 }
 
 // 8. Attendance percentage
-function checkAttendance(percentage) {
-    if (percentage >= 90) {
-        console.log("Excellent");
-    } else if (percentage >= 75) {
-        console.log("Good");
-    } else if (percentage >= 50) {
-        console.log("Satisfactory");
+{
+    let attendance = 80;
+    let status = "";
+    
+    if (attendance >= 90) {
+        status = "Excellent";
+    } else if (attendance >= 75) {
+        status = "Good";
+    } else if (attendance >= 50) {
+        status = "Satisfactory";
     } else {
-        console.log("Poor");
+        status = "Poor";
     }
+    
+    console.log(status);
 }
 
-// 9. Find highest of three marks
-function findHighestMark(m1, m2, m3) {
+// 9. Highest of three marks
+{
+    let m1 = 80;
+    let m2 = 95;
+    let m3 = 85;
+    let highest = 0;
+    
     if (m1 >= m2 && m1 >= m3) {
-        console.log("Highest mark is " + m1);
+        highest = m1;
     } else if (m2 >= m1 && m2 >= m3) {
-        console.log("Highest mark is " + m2);
+        highest = m2;
     } else {
-        console.log("Highest mark is " + m3);
+        highest = m3;
     }
+    
+    console.log("Highest: " + highest);
 }
 
-// 10. Check specific number state
-function checkNumberState(num) {
-    if (num > 0 && num % 2 === 0) {
-        console.log("Positive Even");
+// 10. Check positive/negative/even/odd/zero
+{
+    let num = -4;
+    let result = "";
+    
+    if (num === 0) {
+        result = "Zero";
+    } else if (num > 0 && num % 2 === 0) {
+        result = "Positive Even";
     } else if (num > 0 && num % 2 !== 0) {
-        console.log("Positive Odd");
+        result = "Positive Odd";
     } else if (num < 0 && num % 2 === 0) {
-        console.log("Negative Even");
-    } else if (num < 0 && num % 2 !== 0) {
-        console.log("Negative Odd");
+        result = "Negative Even";
     } else {
-        console.log("Zero");
+        result = "Negative Odd";
     }
+    
+    console.log(result);
 }
 
 
 // D] Nested if Statement
 
-// 1. > 10 and divisible by 3
-function nestedCheck1(num) {
+// 1. >10 and divisible by 3
+{
+    let num = 15;
+    
     if (num > 10) {
         if (num % 3 === 0) {
             console.log("Greater than 10 and divisible by 3");
@@ -310,8 +431,11 @@ function nestedCheck1(num) {
     }
 }
 
-// 2. >= 18 and has voter ID
-function checkVoterEligibility(age, hasVoterId) {
+// 2. 18+ and voter ID
+{
+    let age = 20;
+    let hasVoterId = true;
+    
     if (age >= 18) {
         if (hasVoterId) {
             console.log("Can Vote");
@@ -319,49 +443,48 @@ function checkVoterEligibility(age, hasVoterId) {
     }
 }
 
-// 3. Score >= 40 and >= 80 for distinction
-function checkDistinction(score) {
-    if (score >= 40) {
-        if (score >= 80) {
+// 3. Marks >= 40 and >= 80
+{
+    let marks = 85;
+    
+    if (marks >= 40) {
+        if (marks >= 80) {
             console.log("Passed with Distinction");
-        } else {
-            console.log("Passed");
         }
     }
 }
 
-// 4. Simple ATM system
-function atmSystem(enteredPin, actualPin, balance, withdrawalAmount) {
-    if (enteredPin === actualPin) {
-        if (balance >= withdrawalAmount) {
+// 4. ATM System
+{
+    let enteredPin = 1234;
+    let correctPin = 1234;
+    let balance = 5000;
+    let withdraw = 2000;
+    
+    if (enteredPin === correctPin) {
+        if (balance >= withdraw) {
             console.log("Withdrawal Successful");
-        } else {
-            console.log("Insufficient Balance");
         }
-    } else {
-        console.log("Incorrect PIN");
     }
 }
 
-// 5. Strict Leap Year Check
-function checkStrictLeapYear(year) {
+// 5. Leap year exact nested check
+{
+    let year = 2000;
+    
     if (year % 4 === 0) {
         if (year % 100 === 0) {
             if (year % 400 === 0) {
-                console.log(year + " is a Leap Year");
-            } else {
-                console.log(year + " is Not a Leap Year");
+                console.log("Leap Year");
             }
-        } else {
-            console.log(year + " is a Leap Year");
         }
-    } else {
-        console.log(year + " is Not a Leap Year");
     }
 }
 
-// 6. Nested Email Validation
-function validateEmail(email) {
+// 6. Valid Email check
+{
+    let email = "user@domain.com";
+    
     if (email.includes("@")) {
         if (email.endsWith(".com")) {
             if (email.length > 10) {
@@ -371,23 +494,27 @@ function validateEmail(email) {
     }
 }
 
-// 7. Online Shopping Discount
-function calculateShoppingDiscount(cartTotal, isPremium) {
-    if (cartTotal >= 1000) {
-        let finalAmount;
+// 7. Online shopping discount
+{
+    let total = 1200;
+    let isPremium = true;
+    let finalAmount = total;
+    
+    if (total >= 1000) {
         if (isPremium) {
-            finalAmount = cartTotal - (cartTotal * 0.20); // 20% discount
+            finalAmount = total * 0.80; // 20% off
         } else {
-            finalAmount = cartTotal - (cartTotal * 0.10); // 10% discount
+            finalAmount = total * 0.90; // 10% off
         }
-        console.log("Final Amount: ₹" + finalAmount);
-    } else {
-        console.log("Final Amount: ₹" + cartTotal);
     }
+    
+    console.log("Final Amount: " + finalAmount);
 }
 
-// 8. Positive, Even, Divisible by 4
-function nestedCheck2(num) {
+// 8. Positive -> Even -> Divisible by 4
+{
+    let num = 16;
+    
     if (num > 0) {
         if (num % 2 === 0) {
             if (num % 4 === 0) {
@@ -397,24 +524,161 @@ function nestedCheck2(num) {
     }
 }
 
-// 9. Job eligibility checker
-function checkJobEligibility(age, hasDegree, experienceYears) {
+// 9. Job eligibility
+{
+    let age = 25;
+    let hasDegree = true;
+    let exp = 3;
+    
     if (age >= 21 && age <= 30) {
         if (hasDegree) {
-            if (experienceYears >= 2) {
+            if (exp >= 2) {
                 console.log("Eligible for Interview");
             }
         }
     }
 }
 
-// 10. Exam eligibility checker
-function checkExamEligibility(isPresent, internalMarks, externalMarks) {
+// 10. Exam eligibility
+{
+    let isPresent = true;
+    let internalMarks = 32;
+    let externalMarks = 40;
+    
     if (isPresent) {
         if (internalMarks >= 30) {
             if (externalMarks >= 35) {
                 console.log("Eligible for Final Exam");
             }
         }
+    }
+}
+
+
+// E] switch Statement
+
+// 1. Days in a month
+{
+    let month = 2;
+    let result = "";
+    
+    switch (month) {
+        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+            result = "31 days";
+            break;
+        case 4: case 6: case 9: case 11:
+            result = "30 days";
+            break;
+        case 2:
+            result = "28 days";
+            break;
+        default:
+            result = "Invalid month";
+    }
+    
+    console.log(result);
+}
+
+// 2. Vowel or consonant
+{
+    let char = "e";
+    let result = "";
+    
+    switch (char) {
+        case "a": case "e": case "i": case "o": case "u":
+        case "A": case "E": case "I": case "O": case "U":
+            result = "Vowel";
+            break;
+        default:
+            result = "Consonant";
+    }
+    
+    console.log(result);
+}
+
+// 3. Season using multiple cases
+{
+    let num = 3;
+    let result = "";
+    
+    switch (num) {
+        case 1:
+        case 2:
+            result = "Winter";
+            break;
+        case 3:
+        case 4:
+            result = "Summer";
+            break;
+    }
+    
+    console.log(result);
+}
+
+// 4. Class based on marks
+{
+    let marks = 65;
+    let result = "";
+    
+    switch (true) {
+        case (marks >= 75):
+            result = "Distinction";
+            break;
+        case (marks >= 60):
+            result = "1st class";
+            break;
+        case (marks >= 50):
+            result = "2nd class";
+            break;
+        case (marks >= 35):
+            result = "3rd class";
+            break;
+        default:
+            result = "Failed";
+    }
+    
+    console.log(result);
+}
+
+// 5. Nested switch
+{
+    let role = "admin";
+    let action = "create";
+    let result = "";
+    
+    switch (role) {
+        case "admin":
+            switch (action) {
+                case "create": result = "Admin Create"; break;
+                case "edit": result = "Admin Edit"; break;
+                case "delete": result = "Admin Delete"; break;
+            }
+            break;
+        case "user":
+            result = "Limited Access";
+            break;
+    }
+    
+    console.log(result);
+}
+
+// 6. Predict, explain, and correct
+{
+    let fruit = "mango";
+    let result = "";
+    
+    switch (fruit) {
+        case "apple":
+            result = "Apple is red";
+            break;
+        case "mango":
+            result = "Mango is yellow";
+            break;
+        case "banana":
+            result = "Banana is yellow";
+            break;
+        default:
+            result = "Unknown fruit";
+            break;
     }
 }
