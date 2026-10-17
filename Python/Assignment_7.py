@@ -149,6 +149,39 @@
 #     days = days + 1
 # print(days)
 
+# Question 34 
+# N = int(input("Enter a non-negative integer: "))
+# result = 1
+# i = 1
+# while i <= N:
+#     result *= i
+#     i += 1
+# print(result)
+
+# Question 35
+# start=int(input("Enter the start value: "))
+# end=int(input("Enter the end value: "))
+# sum=0
+# while start<=end:
+#     sum+=start
+#     start+=1
+# print(sum)
+
+# Question 36 
+# n=int(input("Enter a number: "))
+# i=2
+# while i<=n:
+#     print(n)
+#     n-=2
+
+### Question 37
+# n=int(input("Enter a number: "))
+# value=0
+# while value>=0:
+#     n/=2
+#     value+=n
+# print(value)
+    
 # Question 40
 # start = 20
 # step = 5
@@ -157,17 +190,17 @@
 #     start = start - step
 
 # Question 41
-# n = 58321
-# count = 0
-# while n > 0:
-#     count = count + 1
-#     n = n // 10
-# if count == 0:
-#     count = 1
-# print(count)
+n = int(input("Enter a number: "))
+count = 0
+while n > 0:
+    count = count + 1
+    n = n // 10
+if count == 0:
+    count = 1
+print(count)
 
 # Question 42
-# n = 583
+# n = int(input("Enter a number: "))
 # total = 0
 # while n > 0:
 #     digit = n % 10
@@ -176,7 +209,7 @@
 # print(total)
 
 # Question 43
-# n = 5830
+# n = int(input("Enter a number: "))
 # reverse = 0
 # while n > 0:
 #     digit = n % 10
@@ -185,7 +218,7 @@
 # print(reverse)
 
 # Question 44
-# n = 234
+# n = int(input("Enter a number: "))
 # product = 1
 # while n > 0:
 #     digit = n % 10
@@ -196,14 +229,14 @@
 # print(product)
 
 # Question 45
-# n = 58321
+# n = int(input("Enter a number: "))
 # while n > 0:
 #     digit = n % 10
 #     print(digit)
 #     n = n // 10
 
 # Question 46
-# n = 58321
+# n = int(input("Enter a number: "))
 # last_digit = n % 10
 # while n >= 10:
 #     n = n // 10
@@ -212,7 +245,7 @@
 # print("Last digit:", last_digit)
 
 # Question 47
-# n = 583204
+# n = int(input("Enter a number: "))
 # count = 0
 # while n > 0:
 #     digit = n % 10
@@ -222,7 +255,7 @@
 # print(count)
 
 # Question 48
-# n = 583204
+# n = int(input("Enter a number: "))
 # count = 0
 # while n > 0:
 #     digit = n % 10
@@ -232,7 +265,7 @@
 # print(count)
 
 # Question 49
-# n = 583204
+# n = int(input("Enter a number: "))
 # total = 0
 # while n > 0:
 #     digit = n % 10
@@ -242,7 +275,7 @@
 # print(total)
 
 # Question 50
-# n = 583204
+# n = int(input("Enter a number: "))
 # largest = 0
 # while n > 0:
 #     digit = n % 10
@@ -313,7 +346,7 @@
 # print("Middle digits sum:", middle_sum)
 
 # Question 56 
-# n = 5
+# n = int(input("Enter a number: "))
 # i = 1
 # factorial = 1
 # while i <= n:
@@ -322,7 +355,7 @@
 #     i = i + 1
 
 # Question 57
-# n = 24
+# n = int(input("Enter a number: "))
 # i = 1
 # factorial = 1
 # while factorial < n:
@@ -334,7 +367,7 @@
 #     print("No")
 
 # Question 58
-# n = 20
+# n = int(input("Enter a number: "))
 # i = 1
 # factorial = 1
 # largest = 1
