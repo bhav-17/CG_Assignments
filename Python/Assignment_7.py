@@ -190,14 +190,14 @@
 #     start = start - step
 
 # Question 41
-n = int(input("Enter a number: "))
-count = 0
-while n > 0:
-    count = count + 1
-    n = n // 10
-if count == 0:
-    count = 1
-print(count)
+# n = int(input("Enter a number: "))
+# count = 0
+# while n > 0:
+#     count = count + 1
+#     n = n // 10
+# if count == 0:
+#     count = 1
+# print(count)
 
 # Question 42
 # n = int(input("Enter a number: "))
