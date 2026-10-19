@@ -124,11 +124,15 @@
 #     i+=2
 # print(sum)
 
-### Question 31
-# price=int(input("Enter the price: "))
-# Question uestion uantity=int(input("Enter the Question uestion uantity: "))
-# cost=price*Question uestion uantity
-# while cost
+# Question 31
+# price = int(input("Enter the price: "))
+# quantity = int(input("Enter the quantity: "))
+# total_cost = 0
+# count = 0
+# while count < quantity:
+#     total_cost += price
+#     count += 1
+# print(total_cost)
 
 # Question 32
 # DAILY_SAVING = int(input("Enter the daily saving "))
@@ -141,8 +145,8 @@
 # print(total_saved)
 
 # Question 33
-# daily_amount = 15
-# target = 70
+# daily_amount = int(input("Enter the daily amount: "))
+# target = int(input("Enter the target: "))
 # days = 0
 # while saved < target:
 #     saved = saved + daily_amount
@@ -174,13 +178,29 @@
 #     print(n)
 #     n-=2
 
-### Question 37
-# n=int(input("Enter a number: "))
-# value=0
-# while value>=0:
-#     n/=2
-#     value+=n
-# print(value)
+# Question 37
+# n = int(input("Enter a number: "))
+# while n > 0:
+#     n //= 2
+#     print(n)
+
+# Question 38
+# n = int(input("Enter a number: "))
+# step=0
+# while n>=0:
+#     n-=3
+#     step+=1
+# print(step)
+
+# Question 39
+# saved=int(input("Enter the saved amount: "))
+# daily_amount=int(input("Enter the daily amount: "))
+# target=int(input("Enter the target amount: "))
+# days=0
+# while saved<target:
+#     saved+=daily_amount
+#     days+=1
+# print(days)
     
 # Question 40
 # start = 20
