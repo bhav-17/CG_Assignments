@@ -396,3 +396,54 @@
 #     i = i + 1
 #     factorial = factorial * i
 # print(largest)
+
+# TYPE 5
+
+# Question 79
+# num=int(input("Enter a number: "))
+# i=2
+# while num%i==0:
+#     print("Not Prime")
+#     i+=1
+#     break
+# else:
+#     print("Prime")
+
+# Question 80
+# num1=int(input("Enter a: "))
+# num2=int(input("Enter b: "))
+# if num1 < num2:
+#     hcf = num1
+# else:
+#     hcf = num2
+# while hcf > 0:
+#     if num1 % hcf == 0 and num2 % hcf == 0:
+#         break
+#     hcf = hcf - 1
+# print("The HCF is:", hcf)
+
+# Question 81
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+# if num1 > num2:
+#     greater = num1
+# else:
+#     greater = num2
+# while True:
+#     if greater % num1 == 0 and greater % num2 == 0:
+#         break
+#     greater += 1
+# print("The LCM is:", greater)
+
+# Question 82
+# num=int(input("Enter a number: "))
+# i=1
+# sum=0
+# while num>i:
+#     if num%i==0:
+#         sum+=i
+#     i+=1
+# if sum==num:
+#     print("Perfect")
+# else:
+#     print("Not perfect")
