@@ -447,3 +447,13 @@
 #     print("Perfect")
 # else:
 #     print("Not perfect")
+
+# Question 83
+# num=int(input("Enter a number: "))
+# fact=1
+# while num>0:
+#     digit=num%10
+#     num//=10
+#     fact*=digit
+# print(fact)
+
