@@ -456,4 +456,3 @@
 #     num//=10
 #     fact*=digit
 # print(fact)
-
