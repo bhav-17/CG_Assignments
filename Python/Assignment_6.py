@@ -76,3 +76,14 @@
 #     for k in range(i):
 #         print("*",end="")
 #     print()
+
+# Question 14
+# rows=int(input("Enter a number: "))
+# for i in range(rows,0,-1):
+#     for j in range(rows-i):
+#         print(" ",end="")
+#     for k in range(i):
+#         print("*",end="")
+#     print()
+
+## Question 15
