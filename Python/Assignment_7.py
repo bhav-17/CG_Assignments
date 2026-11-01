@@ -456,3 +456,228 @@
 #     num//=10
 #     fact*=digit
 # print(fact)
+
+# Question 84
+# n=int(input("Enter a number: "))
+# temp=n
+# digits=0
+# if n==0:
+#     digits=1
+# while temp>0:
+#     digits+=1
+#     temp//=10
+# temp=n
+# total=0
+# while temp>0:
+#     digit=temp%10
+#     total+=digit**digits
+#     temp//=10
+# if total==n:
+#     print("Armstrong")
+# else:
+#     print("Not Armstrong")
+
+
+# Question 85
+# n=int(input("Enter a number: "))
+# binary=0
+# place=1
+# if n==0:
+#     print(0)
+# else:
+#     while n>0:
+#         rem=n%2
+#         binary+=rem*place
+#         place*=10
+#         n//=2
+#     print(binary)
+
+
+# Question 86
+# n=int(input("Enter a number: "))
+# i=1
+# total=0
+# while i<=n:
+#     if n%i==0:
+#         total+=i
+#     i+=1
+# print(total)
+
+
+# Question 87
+# n=int(input("Enter number of rows: "))
+# i=1
+# while i<=n:
+#     j=1
+#     while j<=i:
+#         print(j,end=" ")
+#         j+=1
+#     print()
+#     i+=1
+
+
+# Question 88
+# r=int(input("Enter rows: "))
+# c=int(input("Enter columns: "))
+# i=1
+# while i<=r:
+#     j=1
+#     while j<=c:
+#         if i==1 or i==r or j==1 or j==c:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#         j+=1
+#     print()
+#     i+=1
+
+
+# Question 89
+# n=int(input("Enter number of rows: "))
+# i=1
+# while i<=n:
+#     j=1
+#     while j<=n-i:
+#         print(" ",end=" ")
+#         j+=1
+#     j=1
+#     while j<=i:
+#         print("*",end=" ")
+#         j+=1
+#     print()
+#     i+=1
+
+
+# Question 90
+# n=int(input("Enter a number: "))
+# i=1
+# while i<=n:
+#     j=1
+#     while j<=n:
+#         print(i*j,end=" ")
+#         j+=1
+#     print()
+#     i+=1
+
+
+# Question 91
+# n=int(input("Enter the limit: "))
+# a=0
+# b=1
+# while a<=n:
+#     print(a,end=" ")
+#     next_num=a+b
+#     a=b
+#     b=next_num
+
+
+# Question 92
+# n=int(input("Enter a number: "))
+# i=2
+# while i<=n:
+#     j=2
+#     prime=True
+#     while j<i:
+#         if i%j==0:
+#             prime=False
+#             break
+#         j+=1
+#     if prime:
+#         print(i,end=" ")
+#     i+=1
+
+
+# Question 93
+# n=int(input("Enter a number: "))
+# num=0
+# while num<=n:
+#     temp=num
+#     digits=0
+#     if num==0:
+#         digits=1
+#     while temp>0:
+#         digits+=1
+#         temp//=10
+#     temp=num
+#     total=0
+#     while temp>0:
+#         digit=temp%10
+#         total+=digit**digits
+#         temp//=10
+#     if total==num:
+#         print(num,end=" ")
+#     num+=1
+
+
+# Question 94
+# n=int(input("Enter a number: "))
+# num=1
+# while num<=n:
+#     i=1
+#     total=0
+#     while i<num:
+#         if num%i==0:
+#             total+=i
+#         i+=1
+#     if total==num:
+#         print(num,end=" ")
+#     num+=1
+
+
+# Question 95
+# n=int(input("Enter a number: "))
+# a=1
+# while a<n-a:
+#     b=n-a
+#     print(a,"+",b)
+#     a+=1
+
+
+# Question 96
+# s=int(input("Enter digit sum: "))
+# num=10
+# while num<=99:
+#     tens=num//10
+#     ones=num%10
+#     if tens+ones==s:
+#         print(num,end=" ")
+#     num+=1
+
+
+# Question 97
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# i=1
+# while i<=a and i<=b:
+#     if a%i==0 and b%i==0:
+#         print(i,end=" ")
+#     i+=1
+
+
+# Question 98
+# n=int(input("Enter a number: "))
+# a=2
+# found=False
+# while a*a<=n:
+#     if n%a==0:
+#         b=n//a
+#         j=2
+#         prime_a=True
+#         while j<a:
+#             if a%j==0:
+#                 prime_a=False
+#                 break
+#             j+=1
+#         j=2
+#         prime_b=True
+#         while j<b:
+#             if b%j==0:
+#                 prime_b=False
+#                 break
+#             j+=1
+#         if prime_a and prime_b:
+#             print(a,"*",b)
+#             found=True
+#     a+=1
+# if not found:
+#     print("No prime factor pair")
