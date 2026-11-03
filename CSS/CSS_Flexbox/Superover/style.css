@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: navy;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+    margin-top: 5vh;
+}
+#bgimage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+    width: 100vw;
+    filter: brightness(0.2);
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo>svg{
+    filter: brightness(100);
+}
+#title{
+    width: 6vw;
+    line-height: 80%;
+    color: white;
+    text-wrap-mode: wrap;
+    text-transform: uppercase;
+}
+#cards-container{
+    display: flex;
+    justify-content: space-between;
+    height: 18vw;
+    gap: 3vw;
+    width: 60vw;
+}
+.cards{
+    padding: 2vw;
+    flex: 1 1 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5%;
+    height: 125%;
+}
+.cards >h1{
+    font-size: 4vw;
+}
+.cards >h2{
+    font-size: 2.5vw;
+    font-weight: 1000;
+}
+.cards:first-child{
+    background-color: #1e5fa5;
+}
+.cards:last-child{
+    background-color: #45973a;
+}
+.score-balls-container{
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    /* gap: 1vw; */
+}
+.score-balls{
+    color: black;
+    font-weight: 1000;
+    font-size: 1.6vw;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.2vw;
+    width: 2.2vw;
+}
+#btn-container{
+    display: flex;
+    gap: 3vw;
+}
+.btns{
+    border: none;
+    border-radius: 1.5em;
+    height: 5vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fff;
+}
+.btns:first-child{
+    background-color: gold;
+}
+.btns:last-child{
+    background-color: red;
+}
