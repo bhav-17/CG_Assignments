@@ -268,4 +268,4 @@ Example: In a shopping website, instead of writing the same code repeatedly to c
 /* Three advantages of using functions are:
 1. Code Reusability: We can reuse the same code multiple times.
 2. Reduces Repetition: Avoids writing the same code again and again.
-3. Easy Debugging: Makes it easier to find and fix errors in a program. */
+3. Easy Debugging: Makes it easier to find and fix errors in a program. */ 
