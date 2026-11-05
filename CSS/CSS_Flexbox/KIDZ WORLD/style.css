@@ -1,216 +1,224 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav{
-    min-height: 80px; 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 1rem 50px;
+  padding: 1rem 50px;
 
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
 }
 
 .logo {
-    height: 40px; 
+  height: 40px;
 }
 
 .cart {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
 
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.cart-icon1, .cart2 {
-    height: 24px;
+.cart-icon1,
+.cart2 {
+  height: 24px;
 }
 
 .big-img {
-    width: 100%;
-    height: 50vh;
-    background-image: url(assets/kw-background.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url(assets/kw-background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .text-box {
-    position: relative;
-    padding-left: 5vw;
+  position: relative;
+  padding-left: 5vw;
 }
 
 .text {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    color: white;
-    line-height: 1.2; 
-    font-size: clamp(2rem, 5vw, 4rem);
-    margin-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  line-height: 1.2;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 10px;
 }
 
 .text2 {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    color: white;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 .collection-page {
-    margin: 4rem 5%;
+  margin: 4rem 5%;
 }
 
 h2 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1.5rem;
 }
 
 .collection1 {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 2rem;
-    justify-content: center; 
-    margin-bottom: 10vh;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 10vh;
 }
 
-
-.book, .book2 {
-    
-    width: 100%; 
-    max-width: 200px;
-    height: auto;
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+.book,
+.book2 {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-.book:hover, .book2:hover {
-    transform: scale(1.05);
+.book:hover,
+.book2:hover {
+  transform: scale(1.05);
 }
 
-.info, .info2 {
-    display: flex;
-    width: 100%;
-    max-width: 200px; 
-    justify-content: space-between;
-    margin-top: 10px;
-    align-items: center;
+.info,
+.info2 {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .book-name {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .author {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: -2px;
-    font-size: 0.8rem;
-    color: rgb(120, 120, 120);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: -2px;
+  font-size: 0.8rem;
+  color: rgb(120, 120, 120);
 }
 
 .rate {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .Add {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.85rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85rem;
 
-    padding: 0.4rem 1rem; 
-    background-color: rgb(85, 85, 253);
-    color: white;
-    border: none;
-    border-radius: 0.4rem;
+  padding: 0.4rem 1rem;
+  background-color: rgb(85, 85, 253);
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-    .nav {
-        padding: 1rem 20px;
-    }
-    
-    .big-img {
-        height: 40vh;
-    }
-    
-    .collection1 {
-        gap: 1.5rem;
-    }
+  .nav {
+    padding: 1rem 20px;
+  }
 
-    .book, .book2, .info, .info2 {
-        max-width: 160px; 
-    }
+  .big-img {
+    height: 40vh;
+  }
+
+  .collection1 {
+    gap: 1.5rem;
+  }
+
+  .book,
+  .book2,
+  .info,
+  .info2 {
+    max-width: 160px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 1rem;
-    }
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem;
+  }
 
-    .big-img {
-        height: 35vh;
-        background-position: left; 
-    }
+  .big-img {
+    height: 35vh;
+    background-position: left;
+  }
 
-    .text-box {
-        padding-left: 20px;
-    }
+  .text-box {
+    padding-left: 20px;
+  }
 
-    .collection-page {
-        margin: 2rem 5%;
-    }
+  .collection-page {
+    margin: 2rem 5%;
+  }
 
-    .collection1 {
-        justify-content: space-around;
-        gap: 1rem;
-    }
+  .collection1 {
+    justify-content: space-around;
+    gap: 1rem;
+  }
 
-    .book, .book2, .info, .info2 {
-        max-width: 42vw; 
-    }
+  .book,
+  .book2,
+  .info,
+  .info2 {
+    max-width: 42vw;
+  }
 
-    .Add {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.75rem;
-    }
+  .Add {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
 }
